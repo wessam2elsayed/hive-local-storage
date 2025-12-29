@@ -67,6 +67,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
            const SizedBox(height: 20,),
 
+           ElevatedButton(
+            onPressed: (){
+              setState(() {
+                hiveModel.box?.clear();
+                
+              });
+           
+          },
+           child: Text("Delete")),
+
+           const SizedBox(height: 20,),
+
            Flexible(
              child: ListView.builder(
               shrinkWrap: true,
